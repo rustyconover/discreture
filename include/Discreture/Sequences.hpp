@@ -5,9 +5,7 @@
 #include <vector>
 namespace discreture
 {
-using llint = long long int; // NOLINT : I want this to be as big as possible,
-                             // not restricted to 64 bits. If in the future
-                             // there are 128 bit ints, that's what I want.
+using llint = std::intmax_t;
 
 //////////////////////////////
 /// \brief n!
