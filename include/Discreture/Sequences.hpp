@@ -5,7 +5,15 @@
 #include <vector>
 namespace discreture
 {
-using llint = std::intmax_t;
+
+#if defined(__GNUC__) || defined(__clang__)
+using int128 = __int128;
+#else
+#include <boost/multiprecision/cpp_int.hpp>
+using int128 = boost::multiprecision::int128_t;
+#endif
+
+using llint = int128;
 
 //////////////////////////////
 /// \brief n!
