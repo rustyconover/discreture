@@ -4,7 +4,6 @@
 #include <cassert>
 #include <iostream>
 #include <iterator>
-#include <vector>
 
 #include "Misc.hpp"
 
@@ -52,19 +51,19 @@ namespace discreture
 ///
 /// \return f∘g
 ///////////////////////////
-template <class vecT, class IntType>
-vecT compose(const vecT& f, const std::vector<IntType>& g)
-{
-    // 		typename vecT::value_type u(0);
-    vecT toReturn(g.size());
+// template <class vecT, class IntType>
+// vecT compose(const vecT& f, const std::vector<IntType>& g)
+// {
+//     // 		typename vecT::value_type u(0);
+//     vecT toReturn(g.size());
 
-    for (size_t i = 0; i < g.size(); ++i)
-    {
-        assert(0 <= g[i] && g[i] < f.size());
-        toReturn[i] = f[g[i]];
-    }
+//     for (size_t i = 0; i < g.size(); ++i)
+//     {
+//         assert(0 <= g[i] && g[i] < f.size());
+//         toReturn[i] = f[g[i]];
+//     }
 
-    return toReturn;
-}
+//     return toReturn;
+// }
 
 } // namespace discreture
