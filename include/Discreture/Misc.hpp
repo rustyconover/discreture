@@ -4,6 +4,7 @@
 #include <boost/container/vector.hpp>
 #include <boost/iterator/iterator_facade.hpp>
 #include <cmath>
+#include <cstdint>
 #include <cstdlib>
 #include <iostream>
 #include <numeric>
